@@ -28,6 +28,7 @@ public class Task2_1 {
 
     private static void convertArr(int[] array){
         for (int i = 0; i < array.length; i++)
-            array[i] ^= 1;// array[i] = (array[i] + 1) % 2;
+            array[i] ^= 1;
+            //Second variant:  array[i] = (array[i] + 1) % 2;
     }
 }
