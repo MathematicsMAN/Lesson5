@@ -16,7 +16,6 @@ public class Lesson3HomeWork {
         int attempts = 3;
 
         guessTheNumber(attempts, MAX_NUMBER);
-
     }
 
     private static void guessTheNumber(int attempts, int max) {
