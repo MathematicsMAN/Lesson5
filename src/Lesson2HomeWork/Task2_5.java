@@ -22,6 +22,11 @@ public class Task2_5 {
             if(num < min) min = num;
         }
 
+        //отсортировать массив. Мин - первый; Макс - последний
+        Arrays.sort(array);
+        min = array[0];
+        max = array[array.length - 1];
+
         System.out.printf("Max value: %d\nMin value: %d",max,min);
     }
 
