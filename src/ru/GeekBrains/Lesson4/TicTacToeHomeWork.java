@@ -97,6 +97,7 @@ public class TicTacToeHomeWork {
         int rowNumber;
         int columnNumber;
 
+        System.out.println("\u001B[36m");  //Бирюзовые символы
         System.out.println("\nХод человека:");
         do{
             rowNumber = -1;
@@ -143,6 +144,7 @@ public class TicTacToeHomeWork {
     }
 
     private static void aiTurn() {
+        System.out.println("\u001B[31m");  //Красные символы
         System.out.println("\nХод компьютера:");
         turnNumbers --;
         if(checkAiWin()) return;
