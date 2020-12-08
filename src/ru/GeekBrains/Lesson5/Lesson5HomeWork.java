@@ -9,8 +9,7 @@ public class Lesson5HomeWork {
         workers[3] = new Worker("Sidorov Ivan", "Doctor","sidorov@gov.ru","880034567",70000,42);
         workers[4] = new Worker("Kotov Ivan", "Teacher","kotov@gov.ru","880045678",45000,27);
 
-        for (Worker person :
-                workers) {
+        for (Worker person : workers) {
             if (person.age > 40){
                 person.printInfo();
                 System.out.println();
