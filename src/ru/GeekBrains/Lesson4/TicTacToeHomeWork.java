@@ -14,7 +14,7 @@ public class TicTacToeHomeWork {
     static final Scanner in = new Scanner(System.in);
     static final Random random = new Random();
     static final char[][] map = new char[SIZE][SIZE];
-    static int numberInLine;
+    static final int numberInLine = initializeNumberInRow();
     static int turnNumbers;
 
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class TicTacToeHomeWork {
 
     private static void playGame() {
         turnNumbers = SIZE * SIZE;
-        initializeNumberInRow();
+        //initializeNumberInRow();
 
         System.out.println("Игровое поле: " + SIZE + " X " + SIZE);
         System.out.println("Выиграет тот, кто первый выставит в ряд "
@@ -34,17 +34,16 @@ public class TicTacToeHomeWork {
         runGame();
     }
 
-    private static void initializeNumberInRow() {
+    private static int initializeNumberInRow() {
         if(SIZE < 3){
             System.out.println("Поле должно быть размером не меньше, чем 3*3");
             System.exit(0);
         }
-        numberInLine = switch (SIZE) {
+        return switch (SIZE) {
             case 3, 4, 5 ->  3;
             case 6, 7, 8, 9 -> 4;
             default -> 5;
         };
-
     }
 
     private static void fullingMap() {
